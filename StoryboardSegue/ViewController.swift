@@ -11,13 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var segueTextField: UITextField!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
     @IBAction func segueButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToAlternateStoryboard", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToAlternateStoryboard" {
+            guard let vc = segue.destination as? AlternateViewController else { return }
+            vc.segueText = segueTextField.text
+        }
     }
     
 }

@@ -16,7 +16,7 @@ class AlternateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        newTextLabel.text = segueText
     }
     
 

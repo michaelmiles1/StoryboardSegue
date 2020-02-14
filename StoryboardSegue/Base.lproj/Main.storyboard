@@ -45,11 +45,22 @@
                     </view>
                     <connections>
                         <outlet property="segueTextField" destination="HcF-tS-CZ5" id="zEx-rc-h2S"/>
+                        <segue destination="qhg-Eo-HtS" kind="show" identifier="goToAlternateStoryboard" id="FWh-nB-iKI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133" y="139"/>
+        </scene>
+        <!--AlternateVC-->
+        <scene sceneID="Bam-37-MDK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Alternate" referencedIdentifier="AlternateVC" id="qhg-Eo-HtS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uEb-sE-Zid"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3N8-i7-FCh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="139"/>
         </scene>
     </scenes>
 </document>
